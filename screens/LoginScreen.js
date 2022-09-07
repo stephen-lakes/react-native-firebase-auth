@@ -11,19 +11,6 @@ const LoginScreen = () => {
 
     const navigation = useNavigation();
 
-    // useEffect(() => {
-    //     const unsubscribe = onAuthStateChanged(auth, (user) => {
-    //         if (user) {
-    //             // User is signed in
-    //             navigation.navigate('Home')
-    //         }else {
-    //             // User is signed out
-    //             console.log('you are not logged in')
-    //           }
-    //     })
-    //     return unsubscribe
-    // }, []);
-
     onAuthStateChanged(auth, (user) => {
         if (user) {
             console.log('Signed in')
