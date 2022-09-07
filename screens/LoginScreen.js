@@ -16,7 +16,7 @@ const LoginScreen = () => {
             console.log('Signed in')
             navigation.navigate('Home')
         }else {
-            console.log('signed out')
+            console.log('Not signed in')
         }
     });
 

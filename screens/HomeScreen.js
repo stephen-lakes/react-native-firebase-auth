@@ -1,11 +1,17 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 
+import { signOut } from "firebase/auth";
+import { auth } from '../firebase';
 
 
 const HomeScreen = () => {
     const handleSignOut = () => {
-
+        signOut(auth).then(() => {
+            console.log('Sign-out successful.');
+        }).catch((error) => {
+            console.log('An error happened.');
+        });
     }
 
   return (
