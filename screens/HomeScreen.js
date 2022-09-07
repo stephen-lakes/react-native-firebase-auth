@@ -12,6 +12,7 @@ const HomeScreen = () => {
         }).catch((error) => {
             console.log('An error happened.');
         });
+        navigation.navigate('Login')
     }
 
   return (
